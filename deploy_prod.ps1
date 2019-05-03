@@ -1,5 +1,8 @@
 docker-machine env yanoah | Invoke-Expression
 
+npm install -g svgo
+npm install -g minify
+
 minify about.html | Out-File -Encoding utf8 -FilePath .\about.min.html
 minify blog.html | Out-File -Encoding utf8 -FilePath .\blog.min.html
 minify index.html | Out-File -Encoding utf8 -FilePath .\index.min.html
