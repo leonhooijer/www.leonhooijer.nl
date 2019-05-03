@@ -20,7 +20,7 @@ docker pull nginx
 docker build -t leonhooijer .
 docker stop leonhooijer
 docker rm leonhooijer
-docker run --name leonhooijer -d --env "VIRTUAL_HOST=www.leonhooijer.nl" --env "LETSENCRYPT_HOST=www.leonhooijer.nl" --env "LETSENCRYPT_EMAIL=leonhooijer@outlook.com" --restart=always leonhooijer 
+docker run --name leonhooijer -d --env "VIRTUAL_HOST=www.leonhooijer.nl,leonhooijer.nl" --env "LETSENCRYPT_HOST=www.leonhooijer.nl,leonhooijer.nl" --env "LETSENCRYPT_EMAIL=leonhooijer@outlook.com" --restart=always leonhooijer
 
 Copy-Item about.orig.html about.html
 Copy-Item blog.orig.html blog.html
